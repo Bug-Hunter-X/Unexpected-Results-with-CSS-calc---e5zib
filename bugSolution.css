@@ -1,0 +1,20 @@
+/* Correct usage of calc() */
+#element {
+  width: calc(100% - 10px);
+  /* Correct: consistent units and proper spacing */
+}
+
+/* Incorrect usage of calc() */
+/*#element {
+  width: calc(100% - 10); /* Incorrect: missing unit */
+}*/
+
+/*Another example of incorrect usage*/
+/*#element2 {
+  width: calc(20px + 30px * 2); /*Incorrect: multiplication should be done first without explicit parenthesis*/
+}*/
+
+/*Correct usage with explicit parenthesis for the above example*/
+#element2 {
+  width: calc(20px + (30px * 2)); /*Correct: multiplication is done first*/
+}
